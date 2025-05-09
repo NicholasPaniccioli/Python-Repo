@@ -10,9 +10,12 @@ def count_vowels(word):
 
     >>> count_vowels('Mega')
     2
+
+    >>> count_vowels('Olive')
+    3
     """
     total_vowels = 0
-    for letter in word:
+    for letter in word.lower():
         if letter in 'aeiou':
             total_vowels += 1
     return total_vowels
