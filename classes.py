@@ -1,4 +1,9 @@
 class Shark:
+    #class variable
+    animal_type = "fish"
+    habitat = "ocean"
+
+#constructor and instance variables
     def __init__(self, name, age, hat):
         self.name = name
         self.age = age
@@ -22,6 +27,6 @@ def main():
     stevie.wearing_hat()
 
     print("Stevie and Sammy have a combined age of: " + str(stevie.age + sammy.age))
-
+    print ("Stevie and Sammy live in the " + sammy.habitat)
 if __name__ == "__main__":
     main()
